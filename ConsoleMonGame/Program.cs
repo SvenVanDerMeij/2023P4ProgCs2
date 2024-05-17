@@ -1,12 +1,20 @@
-﻿namespace ConsoleMonGame
+﻿using System.Diagnostics;
+
+namespace ConsoleMonGame
 {
     internal class Program
     {
         
         static void Main(string[] args)
         {
+            List<string> birds = new List<string> { "uil", "Kraai", "papegaai", "hond" };
+            List<string> birds2 = new List<string> { "meeuw", "duif" };
+            birds.AddRange(birds2);
+            birds.Remove(birds[3]);
+            Console.WriteLine(birds);
             Console.WriteLine("Hello, World!");
-            TestSkillFunctions();
+            birds.ForEach(Console.WriteLine);
+           // TestSkillFunctions();
         }
         static void TestSkillFunctions()
         {
