@@ -8,6 +8,7 @@ namespace ConsoleMonGame
 {
     internal class ConsoleMon
     {
+        internal Element weakness;
         internal int health;
         internal int energy;
         internal string name;

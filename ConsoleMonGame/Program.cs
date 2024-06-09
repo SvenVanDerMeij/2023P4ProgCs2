@@ -14,7 +14,7 @@ namespace ConsoleMonGame
             Console.WriteLine(birds);
             Console.WriteLine("Hello, World!");
             birds.ForEach(Console.WriteLine);
-           // TestSkillFunctions();
+           TestSkillFunctions();
         }
         static void TestSkillFunctions()
         {
@@ -28,7 +28,7 @@ namespace ConsoleMonGame
             };
             skill.UseOn(targetMon, casterMon);
 
-            Console.WriteLine(targetMon.health == -100);
+            Console.WriteLine(targetMon.health == -150);
 
             Console.WriteLine(casterMon.energy == -20);
         }
