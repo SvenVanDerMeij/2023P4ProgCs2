@@ -17,5 +17,6 @@ namespace ConsoleMonGame
             caster.DepleteEnergy(energyCost);
             target.TakeDamage(damage);
         }
+
     }
 }

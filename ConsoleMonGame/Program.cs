@@ -33,5 +33,6 @@ namespace ConsoleMonGame
             Console.WriteLine(casterMon.energy == -20);
         }
 
+
     }
 }
