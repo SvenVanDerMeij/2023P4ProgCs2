@@ -7,6 +7,7 @@ namespace ConsoleMonGame
         
         static void Main(string[] args)
         {
+            
             List<string> birds = new List<string> { "uil", "Kraai", "papegaai", "hond" };
             List<string> birds2 = new List<string> { "meeuw", "duif" };
             birds.AddRange(birds2);
