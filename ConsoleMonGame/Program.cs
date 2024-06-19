@@ -15,7 +15,7 @@ namespace ConsoleMonGame
             Console.WriteLine(birds);
             Console.WriteLine("Hello, World!");
             birds.ForEach(Console.WriteLine);
-           TestSkillFunctions();
+           TestFactoryFunctions();
         }
         static void TestSkillFunctions()
         {
@@ -34,6 +34,12 @@ namespace ConsoleMonGame
             Console.WriteLine(casterMon.energy == -20);
         }
 
+        static void TestFactoryFunctions()
+        {
+            Console.WriteLine("TestFactoryFunctions");
+            ConsoleMonFactory factory = new ConsoleMonFactory();
+            factory.Load("monsterdata.txt");
+        }
 
     }
 }
