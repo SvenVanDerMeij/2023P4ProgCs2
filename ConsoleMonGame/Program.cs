@@ -12,16 +12,20 @@ namespace ConsoleMonGame
             List<string> birds2 = new List<string> { "meeuw", "duif" };
             birds.AddRange(birds2);
             birds.Remove(birds[3]);
-            Console.WriteLine(birds);
-            Console.WriteLine("Hello, World!");
-            birds.ForEach(Console.WriteLine);
-           TestFactoryFunctions();
+            //Console.WriteLine(birds);
+            //Console.WriteLine("Hello, World!");
+            //birds.ForEach(Console.WriteLine);
+             TestFactoryFunctions();
+            //  ConsoleMon datamon = new ConsoleMon("monsterdata.txt");
+            
+            
         }
         static void TestSkillFunctions()
         {
             Console.WriteLine("TestSkillFunctions");
             ConsoleMon casterMon = new ConsoleMon();
             ConsoleMon targetMon = new ConsoleMon();
+            
             Skill skill = new Skill()
             {
                 damage = 100,

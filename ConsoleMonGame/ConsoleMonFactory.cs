@@ -10,14 +10,27 @@ namespace ConsoleMonGame
 {
     internal class ConsoleMonFactory
     {
+        
         internal void Load(string datafile)
         {
             
             string[] lines = File.ReadAllLines(datafile);
             foreach (string line in lines)
             {
-                Console.WriteLine(line);
+                string[] typeSplit = line.Split(new char[] { '|' });
+                string[] consolemonData = typeSplit[0].Split(new char[] {','});
+                ConsoleMon datamon = new ConsoleMon();
+                datamon.name = consolemonData[0];
+                Console.WriteLine(datamon.name);
+                datamon.health = Convert.ToInt16(consolemonData[2]);
+                Console.WriteLine(datamon.health);
+                datamon.energy = Convert.ToInt16(consolemonData[4]);
+                Console.WriteLine(datamon.energy);
+                
+
             }
+
+            
         }
     }
 }
