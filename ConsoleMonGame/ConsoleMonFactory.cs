@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ConsoleMonGame
@@ -27,10 +28,19 @@ namespace ConsoleMonGame
                 datamon.energy = Convert.ToInt16(consolemonData[4]);
                 Console.WriteLine(datamon.energy);
                 
+                
 
             }
 
             
+        }
+
+        internal void LoadJson(string datafile)
+        {
+            string json = File.ReadAllText(datafile);
+            Console.WriteLine(json);
+            List<ConsoleMon> templates = JsonSerializer.Deserialize<List<ConsoleMon>>(json);
+            Console.WriteLine(templates[0].name);
         }
     }
 }

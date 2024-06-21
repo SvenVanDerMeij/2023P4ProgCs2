@@ -9,7 +9,7 @@
             string[] content = File.ReadAllLines("leesdezefile.txt");
            // File.AppendAllText("leesdezefile.txt", "hallo" + Environment.NewLine);
             
-            File.Move(source, dest);
+          //  File.Move(source, dest);
             foreach (string line in content)
             {
                 Console.WriteLine(line);
